@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebCalculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calc.js"></script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+</head>
+    <body>
+        <div id="display"></div>
+        <div id="keyboard">
+            <section>
+                <div class="number-button" onclick="CE_Button()">CE</div>
+                <div class="number-button" onclick="appendOperator('%')">%</div>
+                <div class="number-button" onclick="appendOperator(' / ')">/</div>
+                <div class="number-button" onclick="DEL_Button()">«</div>
+            </section>
+            <section>
+                <div class="number-button" onclick="drawNumber(7)">7</div>
+                <div class="number-button" onclick="drawNumber(8)">8</div>
+                <div class="number-button" onclick="drawNumber(9)">9</div>
+                <div class="number-button" onclick="appendOperator(' * ')">*</div>
+            </section>
+            <section>  
+                <div class="number-button" onclick="drawNumber(4)">4</div>
+                <div class="number-button" onclick="drawNumber(5)">5</div>
+                <div class="number-button" onclick="drawNumber(6)">6</div>
+                <div class="number-button" onclick="appendOperator(' - ')">-</div>
+            </section>    
+            <section>
+                <div class="number-button" onclick="drawNumber(1)">1</div>
+                <div class="number-button" onclick="drawNumber(2)">2</div>
+                <div class="number-button" onclick="drawNumber(3)">3</div>
+                <div class="number-button" onclick="appendOperator(' + ')">+</div>
+            </section>
+            <section>
+                <div class="number-button" onclick="appendOperator('.')">.</div>
+                <div class="number-button" onclick="drawNumber(0)">0</div>
+                <div id="calculateResult-button"onclick="calculateResult()">=</div>
+            </section>
+            </div>
+
+        </div>
+    </body>
+</html>
