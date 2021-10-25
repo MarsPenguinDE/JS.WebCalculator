@@ -20,5 +20,11 @@ function calculateResult() {
     let getInvoice = document.getElementById('display');
     let result = eval(getInvoice.innerHTML);
     getInvoice.innerHTML = result;
+}
 
+function ExtendedButton() {
+    let getButton = document.getElementById('fixed-extended-button')
+    getButton.innerHTML = "Coming Soon!";
+    getButton.style.background = "red";
+    getButton.style.boxShadow = '4px 4px 4px red';
 }

@@ -2,8 +2,29 @@ body {
     margin: 0;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4rem;
+
 }
+
+#fixed-extended-button {
+    position: fixed;
+    color: white;
+    
+    font-size: 1.3rem;
+    background-color: rgb(0, 153, 0);
+    padding: 0.3%;
+    margin-top: 0.5%;
+    cursor: pointer;
+    right: 1%;
+    top: 2%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 4px rgb(30, 117, 30);; 
+    -ms-user-select: None;
+    -moz-user-select: None;
+    -webkit-user-select: None;
+    user-select: None;
+}
+
 #display {
     display: flex;
     flex-wrap: nowrap;
@@ -12,10 +33,13 @@ body {
     height: 25vh;
     width: 100vw;
     background-color: rgb(56, 56, 56);
+    font-size: 4rem;
 }
+
 #display::selection {
     background-color: rgb(0, 153, 0);
 }
+
 #keyboard section {
     display: flex;
     flex-wrap: nowrap;
@@ -32,6 +56,7 @@ body {
     -moz-user-select: None;
     -webkit-user-select: None;
     user-select: None;
+    font-size: 4rem;
 }
 
 .number-button {
